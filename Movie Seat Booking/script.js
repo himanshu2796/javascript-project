@@ -4,8 +4,9 @@ const count =document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie')
 
-let ticketPrice = +movieSelect.value;
 PopulateUI();
+let ticketPrice = +movieSelect.value;
+
 
 function setMovieData(movieIndex,moviePrice){
   localStorage.setItem('selectMovieIndex', movieIndex);
